@@ -41,8 +41,8 @@ def main():
     ###########################################################################
 
     # run_test_init()
-    run_test_append_string()
-    # run_test_double()
+    # run_test_append_string()
+    run_test_double()
     # run_test_shrink()
     # run_test_double_then_shrink()
     # run_test_reset()
@@ -205,7 +205,7 @@ class Box(object):
           #                       contents that did NOT fit]
         """
         # ---------------------------------------------------------------------
-        # TODO: 4. Implement and test this function.
+        # DONE: 4. Implement and test this function.
         #     The testing code is already written for you (above).
         # ---------------------------------------------------------------------
         # ---------------------------------------------------------------------
@@ -217,6 +217,8 @@ class Box(object):
         # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
         #    ** TWO **   LINES OF CODE.
         #######################################################################
+        extra = self.append_string(self.contents)
+        return extra
 
     def shrink(self, new_volume):
         """
