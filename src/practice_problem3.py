@@ -348,7 +348,7 @@ def practice_problem3b(sequence):
       :type: sequence: list    or tuple or string
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     # IMPLEMENTATION REQUIREMENT:  You are NOT allowed to use the
@@ -360,6 +360,11 @@ def practice_problem3b(sequence):
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes.
     ###########################################################################
+    last = sequence[len(sequence) - 1]
+    for k in range(len(sequence) - 1):
+        if sequence[k] == last:
+            return True
+    return False
 
 
 def run_test_practice_problem3c():
