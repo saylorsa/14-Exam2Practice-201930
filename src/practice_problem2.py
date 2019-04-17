@@ -214,13 +214,19 @@ def practice_problem2b(sequence):
       :type sequence: [str]
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
     ###########################################################################
+    string = ''
+    for k in range(len(sequence)):
+        if len(sequence[k])>0:
+            n = sequence[k][0]
+            string = string + str(n)
+    return string
 
 
 ###############################################################################
