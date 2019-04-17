@@ -173,13 +173,19 @@ def practice_problem3a(circles):
       :type sequence: [rg.Circle]
     """
     ###########################################################################
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
     ###########################################################################
+    total = 1
+    for k in range(len(circles)):
+        if len(circles)>0:
+            n = circles[k].center.x
+            total = total * n
+    return total
 
 
 def run_test_practice_problem3b():
